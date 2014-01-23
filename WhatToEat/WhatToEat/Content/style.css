@@ -1,0 +1,50 @@
+﻿body 
+{
+    font-family: 'Lato', sans-serif;
+    margin-top: -20px;
+	padding-top:75px;
+    background-color: #ecf0f1;
+}
+.wrapper
+{
+    width: 96%;
+	max-width: 920px;
+	padding: 2%;
+
+}
+.navbar-default {
+	background-color: #e74c3c;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+	color: #ecf0f1;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ecf0f1;
+}
+h1, h3
+{
+    color: #ecf0f1;
+}
+hr
+{
+    color: black;
+}
+#headerwrap 
+{
+	background-color: #e74c3c;
+	margin-top: -20px;
+	padding-top:80px;
+	min-height: 500px;
+	width: 100%;
+}
+@media only screen 
+and (min-width : 1224px)
+{
+    .mySize
+    {
+        width: 450px;
+    }
+}
