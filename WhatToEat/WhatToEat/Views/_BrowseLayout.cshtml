@@ -31,15 +31,10 @@
       </div>
     </div>
     <!-- fixed navbar end-->
-    <div id="header">
+    <div id="Browseheader">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
-                    <h1>Search For what TO eat, Today!</h1>
-                    <h3>Find a restaurants in your area by searching below.
-                    <br />
-                        Don't forget to also rate your favorites, to better serve others!</h3>
-                    <br />
                     @using (Html.BeginForm("Find", "Search", FormMethod.Get, new { @class = "form-inline" }))
                     {
                         <div class="form-group">
@@ -51,22 +46,14 @@
             </div>
             <!-- row end -->
         </div><!-- container end -->
-        </div>
+        </div>    
     <div class="wrapper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-9 col-md-offset-3">
                     <!-- search results from view-->
                     @RenderBody()
                 </div>
-                    </div>
             </div>
         </div>
     </div>

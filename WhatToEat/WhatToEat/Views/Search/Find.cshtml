@@ -1,0 +1,31 @@
+﻿@model WhatToEat.Models.APIObject
+
+@{
+    ViewBag.Title = "Find";
+    Layout = "~/Views/_BrowseLayout.cshtml";
+}
+<div class="page-header">
+    <h2>Search Results For: @Request.Params["where"]</h2>
+    <h4>Found: @Model.listings.Count()</h4>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Street</th><th>City</th>
+                <th>Province</th><th>Postal Code</th><th>Rating</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var apiObject in Model.listings)
+            {
+                <tr>
+                    <td>@apiObject.id</td><td>@apiObject.name</td><td>@apiObject.address.street</td><td>@apiObject.address.city</td>
+                    <td>@apiObject.address.prov</td><td>@apiObject.address.pcode</td><td><i>TODO: Add Rating System</i></td>
+                    <td><button type="submit" class="btn btn-info">More Details</button></td>
+                </tr>        
+            }
+        </tbody>
+    </table>
+</div>

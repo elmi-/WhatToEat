@@ -12,7 +12,15 @@
 	padding: 2%;
 
 }
-.navbar-default {
+.centered
+{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+/*Bootstrap navbar overrides*/
+.navbar-default 
+{
 	background-color: #e74c3c;
 	border-color: transparent;
 }
@@ -28,16 +36,20 @@ h1, h3
 {
     color: #ecf0f1;
 }
-hr
-{
-    color: black;
-}
-#headerwrap 
+#header
 {
 	background-color: #e74c3c;
 	margin-top: -20px;
 	padding-top:80px;
-	min-height: 500px;
+	min-height: 450px;
+	width: 100%;
+}
+#Browseheader
+{
+	background-color: #e74c3c;
+	margin-top: -20px;
+	padding-top:50px;
+	min-height: 175px;
 	width: 100%;
 }
 @media only screen 
