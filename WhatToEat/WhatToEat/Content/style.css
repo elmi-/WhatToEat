@@ -16,6 +16,17 @@
 	padding: 2%;
     margin: 0 auto;
 }
+.buttonLink
+{
+   color: white;
+   text-decoration: none;
+}
+.buttonLink:hover
+{
+   color: white;
+   text-decoration: none;
+}
+
 .centerAlign
 {
 text-align: center;

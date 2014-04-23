@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WhatToEat.Models.Search;
 
-namespace WhatToEat.Models
+namespace WhatToEat.Models.Search
 {
     public class APIObject
     {

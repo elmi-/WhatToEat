@@ -1,0 +1,16 @@
+﻿@model WhatToEat.Models.BusinessDetails.BusinessDetailsObject
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_BrowseLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+@Model.name
+<br />
+@Model.id
+<br />
+@Model.address.street, @Model.address.city, @Model.address.prov, @Model.address.pcode
+<br />
+@Model.logos.EN

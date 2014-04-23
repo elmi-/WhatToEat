@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WhatToEat.Models
+namespace WhatToEat.Models.Search
 {
     public class Summary
     {

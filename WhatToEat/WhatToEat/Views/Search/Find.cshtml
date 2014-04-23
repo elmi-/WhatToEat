@@ -1,4 +1,4 @@
-﻿@model WhatToEat.Models.APIObject
+﻿@model WhatToEat.Models.Search.APIObject
 @using PagedList.Mvc;
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
@@ -28,7 +28,7 @@
                     <tr>
                         <td>@apiObject.name</td><td>@apiObject.address.street</td><td>@apiObject.address.city</td>
                         <td>@apiObject.address.prov</td><td>@apiObject.address.pcode</td>
-                        <td><button type="submit" class="btn btn-info">More Details</button></td>
+                        <td><button type="submit" class="btn btn-info">@Html.ActionLink("More Details", "Details", new { @listingId = apiObject.id, @businessName = apiObject.name, @city = apiObject.address.city, @prov = apiObject.address.prov }, new { @class = "buttonLink" })</button></td>
                     </tr>        
                 }
             }
@@ -37,7 +37,7 @@
 </div>
 <div class="centerAlign">
     @Html.ActionLink("Previous Page", "Find", new {where = @Model.summary.where, pg = @Model.summary.currentPage - 1 == 0 ? 1 : @Model.summary.currentPage - 1}) |
-    @Html.ActionLink("Next Page", "Find", new {where = @Model.summary.where, pg = (@Model.summary.currentPage + 1 > Model.summary.pageCount ? Model.summary.currentPage :  Model.summary.pageCount)})
+    @Html.ActionLink("Next Page", "Find", new {where = @Model.summary.where, pg = (@Model.summary.currentPage + 1 > Model.summary.pageCount ? Model.summary.currentPage :  Model.summary.currentPage + 1)})
     <br />
     Page @(Model.summary.pageCount < Model.summary.currentPage ? 0 : Model.summary.currentPage) of @Model.summary.pageCount
 </div>

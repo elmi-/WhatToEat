@@ -119,10 +119,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\APIObject.cs" />
-    <Compile Include="Models\Listing.cs" />
-    <Compile Include="Models\Summary.cs" />
+    <Compile Include="Models\BusinessDetails\BusinessDetailsObject.cs" />
+    <Compile Include="Models\BusinessDetails\GeoCode.cs" />
+    <Compile Include="Models\BusinessDetails\Logo.cs" />
+    <Compile Include="Models\Search\Address.cs" />
+    <Compile Include="Models\Search\APIObject.cs" />
+    <Compile Include="Models\Search\Listing.cs" />
+    <Compile Include="Models\Search\Summary.cs" />
     <Compile Include="Models\YellowAPIRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -172,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Search\Find.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Search\Details.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
