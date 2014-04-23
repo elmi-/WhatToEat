@@ -1,31 +1,43 @@
 ﻿@model WhatToEat.Models.APIObject
-
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @{
     ViewBag.Title = "Find";
     Layout = "~/Views/_BrowseLayout.cshtml";
 }
 <div class="page-header">
-    <h2>Search Results For: @Request.Params["where"]</h2>
-    <h4>Found: @Model.listings.Count()</h4>
+    <h2>Search Results For: @Model.summary.where</h2>
+    <h4>Found: @Model.summary.totalListings</h4>
 </div>
 <div class="table-responsive">
     <table class="table table-hover">
         <thead>
-            <tr>
-                <th>ID</th><th>Name</th><th>Street</th><th>City</th>
-                <th>Province</th><th>Postal Code</th><th>Rating</th>
-                <th>Details</th>
+            <tr><th>Name</th><th>Street</th><th>City</th>
+                <th>Province</th><th>Postal Code</th><th>Details</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var apiObject in Model.listings)
             {
-                <tr>
-                    <td>@apiObject.id</td><td>@apiObject.name</td><td>@apiObject.address.street</td><td>@apiObject.address.city</td>
-                    <td>@apiObject.address.prov</td><td>@apiObject.address.pcode</td><td><i>TODO: Add Rating System</i></td>
-                    <td><button type="submit" class="btn btn-info">More Details</button></td>
-                </tr>        
+                if (apiObject.address.street != null && !String.IsNullOrEmpty(apiObject.address.street) &&
+                    apiObject.address.city != null && !String.IsNullOrEmpty(apiObject.address.city) &&
+                    apiObject.address.prov != null && !String.IsNullOrEmpty(apiObject.address.prov) &&
+                    apiObject.address.pcode != null && !String.IsNullOrEmpty(apiObject.address.pcode)
+                    )
+                {
+                    <tr>
+                        <td>@apiObject.name</td><td>@apiObject.address.street</td><td>@apiObject.address.city</td>
+                        <td>@apiObject.address.prov</td><td>@apiObject.address.pcode</td>
+                        <td><button type="submit" class="btn btn-info">More Details</button></td>
+                    </tr>        
+                }
             }
         </tbody>
     </table>
+</div>
+<div class="centerAlign">
+    @Html.ActionLink("Previous Page", "Find", new {where = @Model.summary.where, pg = @Model.summary.currentPage - 1 == 0 ? 1 : @Model.summary.currentPage - 1}) |
+    @Html.ActionLink("Next Page", "Find", new {where = @Model.summary.where, pg = (@Model.summary.currentPage + 1 > Model.summary.pageCount ? Model.summary.currentPage :  Model.summary.pageCount)})
+    <br />
+    Page @(Model.summary.pageCount < Model.summary.currentPage ? 0 : Model.summary.currentPage) of @Model.summary.pageCount
 </div>

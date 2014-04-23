@@ -5,12 +5,20 @@
 	padding-top:75px;
     background-color: #ecf0f1;
 }
+/** color combo palette
+    red e74c3c
+    green buton 2ecc71
+    gray color: 95a5a6
+    dark blue 34495e*/
 .wrapper
 {
     width: 96%;
-	max-width: 920px;
 	padding: 2%;
-
+    margin: 0 auto;
+}
+.centerAlign
+{
+text-align: center;
 }
 .centered
 {
@@ -38,6 +46,7 @@ h1, h3
 }
 #header
 {
+    background: url(../Content/torontoSilo.png) no-repeat left bottom;
 	background-color: #e74c3c;
 	margin-top: -20px;
 	padding-top:80px;
@@ -46,6 +55,7 @@ h1, h3
 }
 #Browseheader
 {
+    background: url(../Content/torontoSilo.png) no-repeat left bottom;
 	background-color: #e74c3c;
 	margin-top: -20px;
 	padding-top:50px;

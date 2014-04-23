@@ -2,6 +2,8 @@ C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\WhatToEat.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\WhatToEat.pdb
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\Newtonsoft.Json.dll
+C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\PagedList.dll
+C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\PagedList.Mvc.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Net.Http.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Net.Http.Formatting.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Net.Http.WebRequest.dll
@@ -13,6 +15,8 @@ C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.Razor.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.Deployment.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.Razor.dll
+C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\PagedList.xml
+C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\PagedList.Mvc.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\Newtonsoft.Json.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Net.Http.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Net.Http.Formatting.xml
@@ -25,6 +29,6 @@ C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.Razor.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.Deployment.xml
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\bin\System.Web.WebPages.Razor.xml
-C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\obj\Debug\WhatToEat.csprojResolveAssemblyReference.cache
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\obj\Debug\WhatToEat.dll
 C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\obj\Debug\WhatToEat.pdb
+C:\Users\ELMI\WhatToEat\WhatToEat\WhatToEat\obj\Debug\WhatToEat.csprojResolveAssemblyReference.cache

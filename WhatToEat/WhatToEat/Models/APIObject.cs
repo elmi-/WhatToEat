@@ -7,6 +7,7 @@ namespace WhatToEat.Models
 {
     public class APIObject
     {
+        public Summary summary { get; set; }
         public List<Listing> listings { get; set; }
     }
 }

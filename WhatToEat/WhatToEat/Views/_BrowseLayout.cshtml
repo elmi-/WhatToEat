@@ -23,8 +23,8 @@
         <!-- mobile navbar -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+              <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
           </ul>
         </div>
         <!--mobile navbar end -->
@@ -48,12 +48,10 @@
         </div><!-- container end -->
         </div>    
     <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <!-- search results from view-->
-                    @RenderBody()
-                </div>
+        <div class="mainContainer">
+            <div>
+                <!-- search results from view-->
+                @RenderBody()
             </div>
         </div>
     </div>
